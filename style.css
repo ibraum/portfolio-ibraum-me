@@ -215,7 +215,7 @@ main{
 
 .hero-buttons, .hero-buttons-span{
     display: flex;
-    align-items: start;
+    align-items: end;
     justify-content: center;
     flex-wrap: wrap;
     gap: 10px;
