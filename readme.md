@@ -9,12 +9,11 @@ Bienvenue sur mon portfolio ! Ce projet regroupe mes réalisations, mes compéte
 ## Table des matières
 
 - [Introduction](#introduction)
-- [Projets](#projets)
 - [Compétences](#compétences)
 - [Technologies utilisées](#technologies-utilisées)
 - [Comment utiliser le projet](#comment-utiliser-le-projet)
 - [Contact](#contact)
-
+- [Thanks](#thanks)
 ## Introduction
 
 Je m'appelle **KONDO Ibrahim**, un developpeur web en formation et pourtant je voudrais me spécialiser dans **l'IA**. Ce portfolio présente mon travail au fil des années et montre ma progression et mes compétences dans divers projets.
@@ -51,5 +50,5 @@ Si vous souhaitez en savoir plus ou discuter d'un projet, n'hésitez pas à me c
 
     Merci de votre visite !
 
-    
+
     @author IBRAUM😎🎶🐱‍👤
