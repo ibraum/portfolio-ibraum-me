@@ -2,6 +2,7 @@
     --black: black;
     --white: white;
     --grey: grey;
+    --purple: rgb(85, 7, 158);
 }
 
 ::-webkit-scrollbar-thumb{
@@ -28,7 +29,7 @@ html{
 
 body{
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
 }
 
 header, nav{
@@ -182,15 +183,22 @@ main{
     display: flex;
     align-items: center;
     justify-content: end;
-    gap: 25px;
+    gap: 35px;
 }
 
 .logos-logo{
-    width: 50px;
+    padding: 5px;
+    font-size: 1.3rem;
+    color: var(--black);
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* outline: 1px solid red; */
 }
 
-.logos-logo img{
-    width: 60px;
+#github-icon:hover{
+    background-color: var(--purple);
 }
 
 .img{
@@ -243,5 +251,11 @@ main{
 
     .localisation{
         text-align: center;
+    }
+
+    .logos{
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly !important;
     }
 }
