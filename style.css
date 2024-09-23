@@ -71,6 +71,16 @@ nav ul{
     justify-content: space-between;
 }
 
+.link-to-pages{
+    text-decoration: none;
+    color: var(--black);
+    transition: color .1s .1s ease-in-out;
+}
+
+.link-to-pages:hover{
+    color: var(--grey);
+}
+
 .lang{
     display: flex;
     gap: 10px;
@@ -119,6 +129,11 @@ nav ul{
 .btn:hover{
     background-color: var(--grey);
     border: 3px solid var(--grey);
+}
+
+.btn-reverse:hover{
+    color: var(--grey);
+    border-color: var(--grey);
 }
 
 /* main-------------------------------------------------------- */
@@ -184,8 +199,6 @@ main{
     align-items: center;
     justify-content: end;
     gap: 35px;
-    padding: 2px 0px;
-    outline: 1px solid greenyellow;
 }
 
 .logos-logo{
@@ -199,7 +212,6 @@ main{
     justify-content: center;
     cursor: pointer;
     z-index: 0;
-    outline: 1px solid red;
 }
 
 #github-icon:hover{
