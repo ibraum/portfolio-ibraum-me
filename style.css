@@ -140,10 +140,6 @@ main{
     position: relative;
 }
 
-#hero::after{
-
-}
-
 .hero-text{
     height: 75%;
     display: flex;
