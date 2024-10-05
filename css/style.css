@@ -4,6 +4,10 @@
     --grey: grey;
     --light-grey: rgb(180, 180, 180);
     --purple: rgb(85, 7, 158);
+    --blue: rgb(0, 140, 255);
+    --red: rgb(179, 72, 72);
+    --yellow: rgb(255, 145, 0);
+    --green: rgb(117, 255, 4);
 }
 
 ::-webkit-scrollbar-thumb{
@@ -26,6 +30,7 @@ html{
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
     /* outline: 1px solid blue; */
+    color: var(--black);
 }
 
 body{
@@ -80,6 +85,10 @@ nav ul{
 
 .link-to-pages:hover{
     color: var(--grey);
+}
+
+.active{
+    color: var(--grey);  
 }
 
 .lang{
@@ -174,6 +183,7 @@ main{
     font-size: 11vw;
     margin: 0;
     padding: 0;
+    text-align: center;
 }
 
 .photographer{
@@ -314,9 +324,70 @@ main{
     font-size: 2rem;
     text-align: center;
     align-content: center;
+    transition: all .1s .1s ease-in-out;
+    position: relative;
+    z-index: 5;
+}
+
+.skills-div::after{
+    content: '';
+    width: 290px;
+    height: 200px;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    transition: all .2s .1s ease-in-out;
+    border: 1px solid var(--white);
+    position: absolute;
+    z-index: 0;
+}
+
+.skills-div:hover::after{
+    left: 10px;
+    top: 10px;
+    z-index: 0;
+    border: 1px solid var(--black);
+}
+
+.skills-div:hover{
+    background-color: var(--black);
+    color: var(--white);
+}
+
+/* --------------------------------about me ---------------------------------------- */
+
+.hero-text-about{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.text-about-me{
+    width: 95%;
+    height: 95%;
+    margin-top: 20px;
+    letter-spacing: 2px;
+    line-height: 35px;
+    font-size: 1.25rem;
+    text-align: justify;
+    align-content: center;
 }
 
 @media screen and (max-width: 1200px) {
+    .hero-text-description{
+        font-size: .8rem;
+    }
+
+    .webdesigner, .photographer{
+        font-weight: bolder;
+        text-transform: uppercase;
+        text-align: center;
+        margin: 0;
+    }
+
     .menu{
         display: block !important;
         color: var(--black);
