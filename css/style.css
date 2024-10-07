@@ -116,6 +116,11 @@ nav ul{
     text-decoration: underline;
 }
 
+.myname{
+    padding: 1px;
+    border: 1px solid var(--grey);
+}
+
 .btn{
     padding: 15px;
     text-decoration: none;
@@ -180,10 +185,11 @@ main{
 }
 
 .webdesigner, .photographer{
-    font-size: 11vw;
+    font-size: 10.5vw;
     margin: 0;
     padding: 0;
     text-align: center;
+    /* letter-spacing: 30px; */
 }
 
 .photographer{
@@ -268,7 +274,7 @@ main{
 
 
 #skills{
-    width: 90%;
+    width: 60%;
     height: 100svh;
     margin: 0 auto;
 }
@@ -421,5 +427,15 @@ main{
         display: flex;
         align-items: center;
         justify-content: space-evenly !important;
+    }
+
+    #skills{
+        width: 95%;
+        height: 100svh;
+        margin: 0 auto;
+    }
+
+    .skills-div{
+        margin: auto;
     }
 }
